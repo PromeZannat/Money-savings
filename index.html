@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css only-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Money</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center my-5">MONEY <span style="color:gold">INCOME,</span>
+            <span style="color:rgb(241, 155, 223)">EXPENSE,</span>
+            <span style="color:rgb(72, 167, 255)">& SAVINGS,</span>
+        </h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row gx-5 gy-5">
+                <div class="col col-lg-6">
+                    <img class="img-fluid rounded mx-auto d-block" src="pexel.jpeg" alt="coins">
+                </div>
+                <div class="col col-lg-6" style="background-color: rgb(250, 229, 175);">
+                    <!--income-->
+                    <h5 class="py-3 text-center fw-bold">Income</h5>
+                    <div class="d-flex justify-content-center">
+                        <p class="mx-3">Income: </p>
+                        <input type="text" id="income-id" placeholder="Add your Income" value="">
+                    </div>
+                    <!--expenses section-->
+                    <h5 class="py-3 text-center fw-bold">Expenses</h5>
+                    <!--food-->
+                    <div class="d-flex justify-content-center pt-2 pb-2">
+                        <p class="mx-3" >Food:</p>
+                        <input type="text" id="food-id"  placeholder="Food Expense" value="">
+                    </div>
+                    <!--rent-->
+                    <div class="d-flex justify-content-center pt-2 pb-2">
+                        <p class="mx-3">Rent:</p>
+                        <input type="text" id="rent-id"  placeholder="Rent Expense" value="">
+                    </div>
+                    <!--cloth-->
+                    <div class="d-flex justify-content-center pt-2 pb-2">
+                        <p class="mx-2">Clothes:</p>
+                        <input type="text" id="cloth-id"  placeholder="Clothes Expense" value="">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="calculate-button" class="px-5 p-2 my-3"style="background-color: rgb(253, 226, 72);" >Calculate</button>
+                    </div>
+                    <!--total calculation-->
+                    <h5  class="py-3 text-center fw-bold">Total Expenses:
+                        <span id="expense-id"> </span> </h5>
+                    <h5 class="py-3 text-center fw-bold">Balance: 
+                        <span id="balance-id"> </span>
+                    </h5>
+                    <!--savings-->
+                    <div class="d-flex justify-content-center">
+                        <p>Save:</p>
+                        <input type="text" id="save-id" class="mx-3" placeholder="Saving Amount">
+                        <p>%</p>
+                        <button id="save-button" class="px-5 py-2 mx-3" style="background-color: rgb(253, 226, 72);">Save</button>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h4 class="py-4 text-center fw-bold">Saving Amount: 
+                            <span class="save-id"> </span>
+                        </h4>
+                        
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h4 class="py-4 text-center fw-bold">Remaining Balance:
+                            <span id="remaining-id"> </span> </h4>
+                    </div>
+                
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <!--javascript only-->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
